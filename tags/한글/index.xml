@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on TheSora</title>
-    <link>https://thesorauniverse.com/posts/</link>
-    <description>Recent content in Posts on TheSora</description>
+    <title>한글 on TheSora</title>
+    <link>https://thesorauniverse.com/tags/%ED%95%9C%EA%B8%80/</link>
+    <description>Recent content in 한글 on TheSora</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 05 Sep 2020 22:22:00 +0900</lastBuildDate>
     
-	<atom:link href="https://thesorauniverse.com/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://thesorauniverse.com/tags/%ED%95%9C%EA%B8%80/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,15 +20,6 @@
       <description>윈도우즈 기준, Choco를 통한 설치를 추천
 Choco 설치
  Hugo 설치 choco install hugo -confirm Git Repository 2개 생성   &amp;lt;USERNAME&amp;gt;.</description>
-    </item>
-    
-    <item>
-      <title>Choco 사용하기(Windows Package Manager)</title>
-      <link>https://thesorauniverse.com/posts/kr/choco/should-use-choco/</link>
-      <pubDate>Fri, 04 Sep 2020 22:54:49 +0900</pubDate>
-      
-      <guid>https://thesorauniverse.com/posts/kr/choco/should-use-choco/</guid>
-      <description>choco 설치 # PowerShell 관리자 권한에서 진행 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.</description>
     </item>
     
   </channel>

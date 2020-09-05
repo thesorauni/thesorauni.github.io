@@ -1,14 +1,60 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on The Sora</title>
+    <title>Tags on TheSora</title>
     <link>https://thesorauniverse.com/tags/</link>
-    <description>Recent content in Tags on The Sora</description>
+    <description>Recent content in Tags on TheSora</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sat, 05 Sep 2020 22:22:00 +0900</lastBuildDate>
     
 	<atom:link href="https://thesorauniverse.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>blog</title>
+      <link>https://thesorauniverse.com/tags/blog/</link>
+      <pubDate>Sat, 05 Sep 2020 22:22:00 +0900</pubDate>
+      
+      <guid>https://thesorauniverse.com/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GitHub</title>
+      <link>https://thesorauniverse.com/tags/github/</link>
+      <pubDate>Sat, 05 Sep 2020 22:22:00 +0900</pubDate>
+      
+      <guid>https://thesorauniverse.com/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://thesorauniverse.com/tags/hugo/</link>
+      <pubDate>Sat, 05 Sep 2020 22:22:00 +0900</pubDate>
+      
+      <guid>https://thesorauniverse.com/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>한글</title>
+      <link>https://thesorauniverse.com/tags/%ED%95%9C%EA%B8%80/</link>
+      <pubDate>Sat, 05 Sep 2020 22:22:00 +0900</pubDate>
+      
+      <guid>https://thesorauniverse.com/tags/%ED%95%9C%EA%B8%80/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>휴고</title>
+      <link>https://thesorauniverse.com/tags/%ED%9C%B4%EA%B3%A0/</link>
+      <pubDate>Sat, 05 Sep 2020 22:22:00 +0900</pubDate>
+      
+      <guid>https://thesorauniverse.com/tags/%ED%9C%B4%EA%B3%A0/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

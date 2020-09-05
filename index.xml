@@ -1,33 +1,43 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>The Sora</title>
+    <title>TheSora</title>
     <link>https://thesorauniverse.com/</link>
-    <description>Recent content on The Sora</description>
+    <description>Recent content on TheSora</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Sep 2020 22:54:49 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2020 22:29:02 +0900</lastBuildDate>
     
 	<atom:link href="https://thesorauniverse.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Choco를 사용하기</title>
-      <link>https://thesorauniverse.com/posts/kr/test/</link>
-      <pubDate>Fri, 04 Sep 2020 22:54:49 +0900</pubDate>
+      <title>Thesora</title>
+      <link>https://thesorauniverse.com/about/thesora/</link>
+      <pubDate>Sat, 05 Sep 2020 22:29:02 +0900</pubDate>
       
-      <guid>https://thesorauniverse.com/posts/kr/test/</guid>
-      <description>See MarkdownTest
-개요 Chocolatey는 The Package Manager for Windows 입니다. Linux의 APT와 동일한 기능을 하는 Windows의 패키지 매니저 입니다.</description>
+      <guid>https://thesorauniverse.com/about/thesora/</guid>
+      <description>반갑습니다. 게임 서버 개발자 더소라입니다. 게임을 포함한 여러 대중문화를 사랑합니다. 개발과 관계된 글을 올립니다.</description>
     </item>
     
     <item>
-      <title>Markdown Template</title>
-      <link>https://thesorauniverse.com/posts/markdown-template/</link>
-      <pubDate>Fri, 04 Sep 2020 22:52:30 +0900</pubDate>
+      <title>Hugo로 github에 블로그 만들기</title>
+      <link>https://thesorauniverse.com/posts/kr/hugo/making-blog-with-hugo/</link>
+      <pubDate>Sat, 05 Sep 2020 22:22:00 +0900</pubDate>
       
-      <guid>https://thesorauniverse.com/posts/markdown-template/</guid>
-      <description>Language Source     Shared C [core library] src/core   C++ src/cpp   Ruby src/ruby   Python src/python   PHP src/php   C# (core library based) src/csharp   Objective-C src/objective-c    Unreal Engine Unreal Engine Welcome to the Unreal Engine source code!</description>
+      <guid>https://thesorauniverse.com/posts/kr/hugo/making-blog-with-hugo/</guid>
+      <description>윈도우즈 기준, Choco를 통한 설치를 추천
+Choco 설치
+ Hugo 설치 choco install hugo -confirm Git Repository 2개 생성   &amp;lt;USERNAME&amp;gt;.</description>
+    </item>
+    
+    <item>
+      <title>Choco 사용하기(Windows Package Manager)</title>
+      <link>https://thesorauniverse.com/posts/kr/choco/should-use-choco/</link>
+      <pubDate>Fri, 04 Sep 2020 22:54:49 +0900</pubDate>
+      
+      <guid>https://thesorauniverse.com/posts/kr/choco/should-use-choco/</guid>
+      <description>choco 설치 # PowerShell 관리자 권한에서 진행 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.</description>
     </item>
     
   </channel>
