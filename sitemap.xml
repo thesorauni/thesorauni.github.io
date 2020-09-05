@@ -3,11 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://thesorauniverse.com/categories/</loc>
+    <loc>https://thesorauniverse.com/posts/kr/test/</loc>
+    <lastmod>2020-09-04T22:54:49+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thesorauniverse.com/posts/</loc>
+    <lastmod>2020-09-04T22:54:49+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://thesorauniverse.com/</loc>
+    <lastmod>2020-09-04T22:54:49+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thesorauniverse.com/posts/markdown-template/</loc>
+    <lastmod>2020-09-04T22:52:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thesorauniverse.com/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://thesorauniverse.com/series/</loc>
   </url>
   
   <url>

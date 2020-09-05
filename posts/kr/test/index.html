@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>Choco를 사용하기 &middot; The Sora</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="Choco를 사용하기">
+<meta itemprop="description" content="See MarkdownTest
+개요 Chocolatey는 The Package Manager for Windows 입니다. Linux의 APT와 동일한 기능을 하는 Windows의 패키지 매니저 입니다.">
+<meta itemprop="datePublished" content="2020-09-04T22:54:49+09:00" />
+<meta itemprop="dateModified" content="2020-09-04T22:54:49+09:00" />
+<meta itemprop="wordCount" content="106">
+
+
+
+<meta itemprop="keywords" content="" />
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Choco를 사용하기"/>
+<meta name="twitter:description" content="See MarkdownTest
+개요 Chocolatey는 The Package Manager for Windows 입니다. Linux의 APT와 동일한 기능을 하는 Windows의 패키지 매니저 입니다."/>
+
+
+<meta property="og:title" content="Choco를 사용하기" />
+<meta property="og:description" content="See MarkdownTest
+개요 Chocolatey는 The Package Manager for Windows 입니다. Linux의 APT와 동일한 기능을 하는 Windows의 패키지 매니저 입니다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://thesorauniverse.com/posts/kr/test/" />
+<meta property="article:published_time" content="2020-09-04T22:54:49+09:00" />
+<meta property="article:modified_time" content="2020-09-04T22:54:49+09:00" />
+
+
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/print.css"
+        media="print">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/poole.css">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/hyde.css">
+
+  
+
+
+  <link type="text/css" rel="stylesheet" href="/css/blog.css">
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+        crossorigin="anonymous" />
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  </head>
+<body>
+  <aside class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+      
+        
+      
+
+      <h1>The Sora</h1>
+
+      
+      <p class="lead">Thesora Blog</p>
+      
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="https://thesorauniverse.com">Home</a>
+        </li>
+        <li>
+          <a href="/posts/">Posts</a>
+        </li><li>
+          <a href="/about/">About</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="social-icons">
+      
+      <a href="#" rel="me" title="GitHub" target="_blank">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      
+      <a href="#" rel="me" title="Twitter" target="_blank">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+      </a>
+      
+    </section>
+  </div>
+</aside>
+
+
+  <main class="content container">
+  <div class="post">
+  <h1>Choco를 사용하기</h1>
+
+  <div class="post-date">
+    <time datetime="2020-09-04T22:54:49&#43;0900">Sep 4, 2020</time> &middot; 1 min read
+  </div>
+
+  <p>See <a href="/posts/markdown-template">MarkdownTest</a></p>
+<h2 id="개요">개요</h2>
+<p>Chocolatey는 The Package Manager for Windows 입니다. Linux의 APT와 동일한 기능을 하는 Windows의 패키지 매니저 입니다.</p>
+<p>일반적으로 dockerize나 기타 Automation 과정에서 패키지의 command-line 명령을 통한 패키지 관리는 필수인데 Windows에서는 Chocolatey(이하 choco)를 사용하면 됩니다.</p>
+<p>쓰다보면 편해서 일반적으로 사용하는 윈도 어플도 저는 choco를 사용해서 설치하고 있습니다.</p>
+<h2 id="choco-설치">choco 설치</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-powershell" data-lang="powershell"><span style="color:#75715e"># On PowerShell</span>
+Set-ExecutionPolicy Bypass -Scope <span style="color:#66d9ef">Process</span> -Force; <span style="color:#66d9ef">[System.Net.ServicePointManager]</span>::SecurityProtocol = <span style="color:#66d9ef">[System.Net.ServicePointManager]</span>::SecurityProtocol <span style="color:#f92672">-bor</span> 3072; iex ((New-Object System.Net.WebClient).DownloadString(<span style="color:#e6db74">&#39;https://chocolatey.org/install.ps1&#39;</span>))
+</code></pre></div><h2 id="choco로-패키지-제어하기">choco로 패키지 제어하기</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-powershell" data-lang="powershell"><span style="color:#75715e"># 관리자 권한 필요</span>
+<span style="color:#75715e"># 패키지(VSCode) 설치</span>
+choco install vscode
+
+<span style="color:#75715e"># 패키지 설치 중에 y 누르기 귀찮다 &amp;amp;&amp;amp; 믿을 만한 곳에서 배포한다면</span>
+choco install vscode -y
+
+<span style="color:#75715e"># 패키지 업그레이드</span>
+choco upgrade vscode
+
+<span style="color:#75715e"># 패키지 삭제</span>
+choco uninstall vscode&lt;/pre&gt;
+</code></pre></div><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+
+</div>
+
+
+  </main>
+
+  <footer>
+  <div>
+    &copy; Thesora 2020
+
+    &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+
+    
+  </div>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+          integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+          crossorigin="anonymous"></script>
+
+  <script src="/js/blog.js"></script>
+
+  
+</body>
+</html>
