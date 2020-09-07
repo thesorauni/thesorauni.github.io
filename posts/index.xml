@@ -19,7 +19,7 @@
       <guid>https://thesorauniverse.com/posts/kr/hugo/making-blog-with-hugo/</guid>
       <description>윈도우즈 기준, Choco를 통한 설치를 추천
 Choco 설치
- Hugo 설치 choco install hugo -confirm Git Repository 2개 생성   &amp;lt;USERNAME&amp;gt;.</description>
+ Hugo 설치 이하의 커맨드들은 PowerShell에서 진행합니다.</description>
     </item>
     
     <item>
