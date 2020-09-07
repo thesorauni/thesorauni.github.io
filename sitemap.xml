@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://thesorauniverse.com/posts/</loc>
+    <lastmod>2020-09-07T23:30:49+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thesorauniverse.com/</loc>
+    <lastmod>2020-09-07T23:30:49+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thesorauniverse.com/posts/kr/dev-mind/immersion-theory/</loc>
+    <lastmod>2020-09-07T23:30:49+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://thesorauniverse.com/tags/best-practices/</loc>
     <lastmod>2020-09-07T17:22:00+09:00</lastmod>
   </url>
@@ -38,17 +53,7 @@
   </url>
   
   <url>
-    <loc>https://thesorauniverse.com/posts/</loc>
-    <lastmod>2020-09-07T17:22:00+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://thesorauniverse.com/tags/</loc>
-    <lastmod>2020-09-07T17:22:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thesorauniverse.com/</loc>
     <lastmod>2020-09-07T17:22:00+09:00</lastmod>
   </url>
   
