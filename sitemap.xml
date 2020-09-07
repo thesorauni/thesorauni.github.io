@@ -3,12 +3,67 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://thesorauniverse.com/about/</loc>
-    <lastmod>2020-09-05T22:29:02+09:00</lastmod>
+    <loc>https://thesorauniverse.com/tags/best-practices/</loc>
+    <lastmod>2020-09-07T17:22:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thesorauniverse.com/categories/</loc>
+    <lastmod>2020-09-07T17:22:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thesorauniverse.com/tags/docker/</loc>
+    <lastmod>2020-09-07T17:22:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thesorauniverse.com/tags/dockerfile/</loc>
+    <lastmod>2020-09-07T17:22:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thesorauniverse.com/tags/go-module/</loc>
+    <lastmod>2020-09-07T17:22:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thesorauniverse.com/tags/golang/</loc>
+    <lastmod>2020-09-07T17:22:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thesorauniverse.com/categories/golang/</loc>
+    <lastmod>2020-09-07T17:22:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thesorauniverse.com/posts/</loc>
+    <lastmod>2020-09-07T17:22:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thesorauniverse.com/tags/</loc>
+    <lastmod>2020-09-07T17:22:00+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://thesorauniverse.com/</loc>
+    <lastmod>2020-09-07T17:22:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thesorauniverse.com/posts/kr/golang/making-golang-docker-img-best-practices/</loc>
+    <lastmod>2020-09-07T17:22:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thesorauniverse.com/tags/%ED%95%9C%EA%B8%80/</loc>
+    <lastmod>2020-09-07T17:22:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thesorauniverse.com/about/</loc>
     <lastmod>2020-09-05T22:29:02+09:00</lastmod>
   </url>
   
@@ -19,11 +74,6 @@
   
   <url>
     <loc>https://thesorauniverse.com/tags/blog/</loc>
-    <lastmod>2020-09-05T22:22:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thesorauniverse.com/categories/</loc>
     <lastmod>2020-09-05T22:22:00+09:00</lastmod>
   </url>
   
@@ -44,21 +94,6 @@
   
   <url>
     <loc>https://thesorauniverse.com/posts/kr/hugo/making-blog-with-hugo/</loc>
-    <lastmod>2020-09-05T22:22:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thesorauniverse.com/posts/</loc>
-    <lastmod>2020-09-05T22:22:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thesorauniverse.com/tags/</loc>
-    <lastmod>2020-09-05T22:22:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thesorauniverse.com/tags/%ED%95%9C%EA%B8%80/</loc>
     <lastmod>2020-09-05T22:22:00+09:00</lastmod>
   </url>
   

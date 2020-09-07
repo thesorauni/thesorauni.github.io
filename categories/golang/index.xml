@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>한글 on TheSora</title>
-    <link>https://thesorauniverse.com/tags/%ED%95%9C%EA%B8%80/</link>
-    <description>Recent content in 한글 on TheSora</description>
+    <title>Golang on TheSora</title>
+    <link>https://thesorauniverse.com/categories/golang/</link>
+    <description>Recent content in Golang on TheSora</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 07 Sep 2020 17:22:00 +0900</lastBuildDate>
     
-	<atom:link href="https://thesorauniverse.com/tags/%ED%95%9C%EA%B8%80/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://thesorauniverse.com/categories/golang/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,17 +20,6 @@
       <description>Ping-Pong Webserver 구현
  Working Directory : go-docker
 사용 웹프레임워크 : gin-gonic</description>
-    </item>
-    
-    <item>
-      <title>Hugo로 github에 블로그 만들기</title>
-      <link>https://thesorauniverse.com/posts/kr/hugo/making-blog-with-hugo/</link>
-      <pubDate>Sat, 05 Sep 2020 22:22:00 +0900</pubDate>
-      
-      <guid>https://thesorauniverse.com/posts/kr/hugo/making-blog-with-hugo/</guid>
-      <description>윈도우즈 기준, Choco를 통한 설치를 추천
-Choco 설치
- Hugo 설치 이하의 커맨드들은 PowerShell에서 진행합니다.</description>
     </item>
     
   </channel>
