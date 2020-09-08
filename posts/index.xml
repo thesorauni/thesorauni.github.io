@@ -61,14 +61,5 @@ Choco 설치
       <description>choco 설치 # PowerShell 관리자 권한에서 진행 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.</description>
     </item>
     
-    <item>
-      <title>Markdown Template</title>
-      <link>https://thesorauniverse.com/posts/markdown-template/</link>
-      <pubDate>Fri, 04 Sep 2020 22:52:30 +0900</pubDate>
-      
-      <guid>https://thesorauniverse.com/posts/markdown-template/</guid>
-      <description>Language Source     Shared C [core library] src/core   C++ src/cpp   Ruby src/ruby   Python src/python   PHP src/php   C# (core library based) src/csharp   Objective-C src/objective-c    Unreal Engine Unreal Engine Welcome to the Unreal Engine source code!</description>
-    </item>
-    
   </channel>
 </rss>
