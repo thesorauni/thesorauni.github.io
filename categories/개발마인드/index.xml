@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>개발마인드 on TheSora</title>
+    <link>https://thesorauniverse.com/categories/%EA%B0%9C%EB%B0%9C%EB%A7%88%EC%9D%B8%EB%93%9C/</link>
+    <description>Recent content in 개발마인드 on TheSora</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 Sep 2020 23:30:49 +0900</lastBuildDate>
+    
+	<atom:link href="https://thesorauniverse.com/categories/%EA%B0%9C%EB%B0%9C%EB%A7%88%EC%9D%B8%EB%93%9C/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>몰입 이론 -칙센트미하이-</title>
+      <link>https://thesorauniverse.com/posts/kr/dev-mind/immersion-theory/</link>
+      <pubDate>Mon, 07 Sep 2020 23:30:49 +0900</pubDate>
+      
+      <guid>https://thesorauniverse.com/posts/kr/dev-mind/immersion-theory/</guid>
+      <description>몰입 그래프 (최초 새로운 과제 두둥 등장)
+  불안 : 처음에 할 수 있을까 불안 각성 : 좋은 힌트를 얻거나 깨달음을 얻게 됨 몰입 : 각성 단계에서 얻은 것들로 계속 시도 자신감 : 몰입 단계에서 성과가 나오면 이 단계로 안정 : 잘 진행되는 단계 지루함 : 이제 좀 루즈해짐 무기력 : 재미가 아예 사라짐 걱정 : 슬슬 뭔가 새로운 걱정이 스물스물 올라옴 (다시 새로운 과제가 날라옴) 다시 불안 : 다시 새로운 과제가 오고 불안 단계로    절대적 몰입 상태 절대적 몰입의 상태 (flow 상태) 에 들어가면 다음과 같은 상황이 발생한다고 합니다.</description>
+    </item>
+    
+  </channel>
+</rss>

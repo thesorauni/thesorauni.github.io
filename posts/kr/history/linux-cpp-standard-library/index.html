@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.3" />
+
+  <title>리눅스의 C&#43;&#43; standard library 정리 그리고 Unreal project와의 이슈 &middot; TheSora</title>
+
+  <meta name="description" content="" />
+
+  
+
+<meta itemprop="name" content="리눅스의 C&#43;&#43; standard library 정리 그리고 Unreal project와의 이슈">
+<meta itemprop="description" content="개요  C&#43;&#43; standard library 구현체에 관한 내용 관련해서 Unreal project와 third-party libraries 통합 이슈   간단 C Standard Library 정리 최초의 libc, 이것이 원래의 고대 표준 라이브러리 구현체입니다.">
+<meta itemprop="datePublished" content="2020-09-08T10:40:21+09:00" />
+<meta itemprop="dateModified" content="2020-09-08T10:40:21+09:00" />
+<meta itemprop="wordCount" content="279">
+
+
+
+<meta itemprop="keywords" content="linux,standard libs,history,unreal," />
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="리눅스의 C&#43;&#43; standard library 정리 그리고 Unreal project와의 이슈"/>
+<meta name="twitter:description" content="개요  C&#43;&#43; standard library 구현체에 관한 내용 관련해서 Unreal project와 third-party libraries 통합 이슈   간단 C Standard Library 정리 최초의 libc, 이것이 원래의 고대 표준 라이브러리 구현체입니다."/>
+
+
+<meta property="og:title" content="리눅스의 C&#43;&#43; standard library 정리 그리고 Unreal project와의 이슈" />
+<meta property="og:description" content="개요  C&#43;&#43; standard library 구현체에 관한 내용 관련해서 Unreal project와 third-party libraries 통합 이슈   간단 C Standard Library 정리 최초의 libc, 이것이 원래의 고대 표준 라이브러리 구현체입니다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://thesorauniverse.com/posts/kr/history/linux-cpp-standard-library/" />
+<meta property="article:published_time" content="2020-09-08T10:40:21+09:00" />
+<meta property="article:modified_time" content="2020-09-08T10:40:21+09:00" />
+
+
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/print.css"
+        media="print">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/poole.css">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/hyde.css">
+
+  
+
+
+  <link type="text/css" rel="stylesheet" href="/css/blog.css">
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+        crossorigin="anonymous" />
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  </head>
+<body>
+  <aside class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+      
+        
+      
+
+      <h1>TheSora</h1>
+
+      
+      <p class="lead">Game Dev Blog</p>
+      
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="https://thesorauniverse.com">Home</a>
+        </li>
+        <li>
+          <a href="/posts/">Posts</a>
+        </li><li>
+          <a href="/about/">About</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="social-icons">
+      
+      <a href="#" rel="me" title="GitHub" target="_blank">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      
+      <a href="#" rel="me" title="Twitter" target="_blank">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+      </a>
+      
+    </section>
+  </div>
+</aside>
+
+
+  <main class="content container">
+  <div class="post">
+  <h1>리눅스의 C&#43;&#43; standard library 정리 그리고 Unreal project와의 이슈</h1>
+
+  <div class="post-date">
+    <time datetime="2020-09-08T10:40:21&#43;0900">Sep 8, 2020</time> &middot; 2 min read
+  </div>
+
+  <h2 id="개요">개요</h2>
+<ul>
+<li>C++ standard library 구현체에 관한 내용</li>
+<li>관련해서 Unreal project와 third-party libraries 통합 이슈</li>
+</ul>
+<hr>
+<h2 id="간단-c-standard-library-정리">간단 C Standard Library 정리</h2>
+<p>최초의 libc, 이것이 원래의 고대 표준 라이브러리 구현체입니다.
+나중에 이것이 GNU의 C 라이브러리로 대체되는데 이것이 바로 glibc입니다.
+현재의 주류 리눅스 운영체제는 glibc를 사용합니다.(데비안 계열 우분투도 2015년 이후로 glibc 사용)</p>
+<p>glibc는 리눅스 시스템에서 가장 저수준의 API이며 거의 모든 runtime library가 glibc에 의존합니다. 예를 들면 c코드에서 fopen 함수를 사용하면 시스템에서 sys_open이 트리거 되고 중간 처리를 해주는 것이 glibc입니다.</p>
+<p>glibc 자체는 시스템 호출을 캡슐화하는 것 말고도 문자열, malloc, linuxthread, locale, signal등과 같은 상위 레벨 응용 프로그램에 필요한 기능을 제공합니다.</p>
+<hr>
+<h2 id="c-standard-library">C++ Standard Library</h2>
+<p>C++ 코드를 작성하는 경우 libc++ / libstdc++라는 두 가지 다른 라이브러리가 있습니다. 이것이 언리얼에서 서드파티 모듈을 참조할 때 문제가 생기는 원인이죠.</p>
+<p>libstdc++는 GCC(GNU Compiler Collection)와 연관된 라이브리입니다. 이것이 리눅스 환경에서의 디폴트 C++ Library이죠.
+libc++는 clang 컴파일러를 위해 재작성된 C++ Standard Library입니다.
+gcc와 libstdc++의 관계는 clang 및 libc++ 관계와 비슷합니다.</p>
+<p>libstdc++와 gcc는 함께 번들로 제공되므로 gcc가 설치될 때 libstdc++가 설치됩니다.</p>
+<p>참고로 glibc와 gcc가 함께 묶이지 않은 이유는 무엇일까요?
+glibc와 비교하여 libstdc++는 표준 C++ 프로그램 라이브러리를 제공하지만 커널을 처리하지는 않습니다. 즉 추상화 수준이 다르죠. 시스템 수준 이벤트의 경우 libstdc++는 먼저 커널과 통신하기 전에 glibc와 상호 작용을 합니다. 아무튼 glibc와 비교할 때 libstdc++는 좀 더 상위 레벨이 라이브러리죠.</p>
+<hr>
+<h2 id="언리얼-프로젝트와-third-party-libraries-통합-이슈">언리얼 프로젝트와 third-party libraries 통합 이슈</h2>
+<p>언리얼에서 쓰는 것은 libc++입니다.
+라이선스 문제 때문에 libc++를 쓰는 것으로 압니다.
+안드로이드 역시 libc++만 지원할 예정이죠.</p>
+<p>리눅스는 libstdc++이 기본입니다.
+libstdc++과 libc++ 이 둘은 Application Binary Interfaces가 호환되지 않습니다.
+그 결과 서로 간의 컴파일된 바이너리가 상호 통신이 불가능하죠.</p>
+<p>이것이 언리얼 프로젝트에 서드파티 라이브러리 플러그인들을 통합할 때 문제가 되는 이유입니다.</p>
+<hr>
+<h2 id="대처-방법">대처 방법</h2>
+<p>third-party libraries를 libc++로 컴파일해야 합니다.(가급적 엔진에 번들된 버전으로)
+차후에 이것에 도움이 되는 괜찮은 Open Source 프로젝트를 소개해 드릴까 합니다.</p>
+<hr>
+<p>😊</p>
+
+</div>
+
+
+  </main>
+
+  <footer>
+  <div>
+    &copy; Thesora 2020
+
+    &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+
+    
+  </div>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+          integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+          crossorigin="anonymous"></script>
+
+  <script src="/js/blog.js"></script>
+
+  
+</body>
+</html>
