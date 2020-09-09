@@ -3,12 +3,72 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://thesorauniverse.com/categories/</loc>
+    <lastmod>2020-09-08T10:40:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thesorauniverse.com/tags/history/</loc>
+    <lastmod>2020-09-08T10:40:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thesorauniverse.com/tags/linux/</loc>
+    <lastmod>2020-09-08T10:40:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thesorauniverse.com/categories/linux/</loc>
+    <lastmod>2020-09-08T10:40:21+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://thesorauniverse.com/posts/</loc>
-    <lastmod>2020-09-07T23:30:49+09:00</lastmod>
+    <lastmod>2020-09-08T10:40:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thesorauniverse.com/tags/standard-libs/</loc>
+    <lastmod>2020-09-08T10:40:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thesorauniverse.com/tags/</loc>
+    <lastmod>2020-09-08T10:40:21+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://thesorauniverse.com/</loc>
+    <lastmod>2020-09-08T10:40:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thesorauniverse.com/tags/unreal/</loc>
+    <lastmod>2020-09-08T10:40:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thesorauniverse.com/posts/kr/history/linux-cpp-standard-library/</loc>
+    <lastmod>2020-09-08T10:40:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thesorauniverse.com/tags/flow-%EC%83%81%ED%83%9C/</loc>
+    <lastmod>2020-09-07T23:30:49+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thesorauniverse.com/tags/%EA%B0%9C%EB%B0%9C%EB%A7%88%EC%9D%B8%EB%93%9C/</loc>
+    <lastmod>2020-09-07T23:30:49+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thesorauniverse.com/categories/%EA%B0%9C%EB%B0%9C%EB%A7%88%EC%9D%B8%EB%93%9C/</loc>
+    <lastmod>2020-09-07T23:30:49+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thesorauniverse.com/tags/%EB%AA%B0%EC%9E%85/</loc>
     <lastmod>2020-09-07T23:30:49+09:00</lastmod>
   </url>
   
@@ -19,11 +79,6 @@
   
   <url>
     <loc>https://thesorauniverse.com/tags/best-practices/</loc>
-    <lastmod>2020-09-07T17:22:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thesorauniverse.com/categories/</loc>
     <lastmod>2020-09-07T17:22:00+09:00</lastmod>
   </url>
   
@@ -49,11 +104,6 @@
   
   <url>
     <loc>https://thesorauniverse.com/categories/golang/</loc>
-    <lastmod>2020-09-07T17:22:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thesorauniverse.com/tags/</loc>
     <lastmod>2020-09-07T17:22:00+09:00</lastmod>
   </url>
   
@@ -108,12 +158,23 @@
   </url>
   
   <url>
+    <loc>https://thesorauniverse.com/tags/choco/</loc>
+    <lastmod>2020-09-04T22:54:49+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thesorauniverse.com/tags/choco-command/</loc>
+    <lastmod>2020-09-04T22:54:49+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://thesorauniverse.com/posts/kr/choco/should-use-choco/</loc>
     <lastmod>2020-09-04T22:54:49+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://thesorauniverse.com/series/</loc>
+    <loc>https://thesorauniverse.com/tags/windows/</loc>
+    <lastmod>2020-09-04T22:54:49+09:00</lastmod>
   </url>
   
 </urlset>

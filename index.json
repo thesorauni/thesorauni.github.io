@@ -1,0 +1,246 @@
+[
+{
+	"uri": "https://thesorauniverse.com/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://thesorauniverse.com/tags/history/",
+	"title": "history",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://thesorauniverse.com/tags/linux/",
+	"title": "linux",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://thesorauniverse.com/categories/linux/",
+	"title": "linux",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://thesorauniverse.com/posts/",
+	"title": "Posts",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://thesorauniverse.com/tags/standard-libs/",
+	"title": "standard libs",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://thesorauniverse.com/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://thesorauniverse.com/",
+	"title": "TheSora",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://thesorauniverse.com/tags/unreal/",
+	"title": "unreal",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://thesorauniverse.com/posts/kr/history/linux-cpp-standard-library/",
+	"title": "리눅스의 C++ standard library 정리 그리고 Unreal project와의 이슈",
+	"tags": ["linux", "standard libs", "history", "unreal"],
+	"description": "",
+	"content": "개요  C++ standard library 구현체에 관한 내용 관련해서 Unreal project와 third-party libraries 통합 이슈   간단 C Standard Library 정리 최초의 libc, 이것이 원래의 고대 표준 라이브러리 구현체입니다. 나중에 이것이 GNU의 C 라이브러리로 대체되는데 이것이 바로 glibc입니다. 현재의 주류 리눅스 운영체제는 glibc를 사용합니다.(데비안 계열 우분투도 2015년 이후로 glibc 사용)\nglibc는 리눅스 시스템에서 가장 저수준의 API이며 거의 모든 runtime library가 glibc에 의존합니다. 예를 들면 c코드에서 fopen 함수를 사용하면 시스템에서 sys_open이 트리거 되고 중간 처리를 해주는 것이 glibc입니다.\nglibc 자체는 시스템 호출을 캡슐화하는 것 말고도 문자열, malloc, linuxthread, locale, signal등과 같은 상위 레벨 응용 프로그램에 필요한 기능을 제공합니다.\n C++ Standard Library C++ 코드를 작성하는 경우 libc++ / libstdc++라는 두 가지 다른 라이브러리가 있습니다. 이것이 언리얼에서 서드파티 모듈을 참조할 때 문제가 생기는 원인이죠.\nlibstdc++는 GCC(GNU Compiler Collection)와 연관된 라이브리입니다. 이것이 리눅스 환경에서의 디폴트 C++ Library이죠. libc++는 clang 컴파일러를 위해 재작성된 C++ Standard Library입니다. gcc와 libstdc++의 관계는 clang 및 libc++ 관계와 비슷합니다.\nlibstdc++와 gcc는 함께 번들로 제공되므로 gcc가 설치될 때 libstdc++가 설치됩니다.\n참고로 glibc와 gcc가 함께 묶이지 않은 이유는 무엇일까요? glibc와 비교하여 libstdc++는 표준 C++ 프로그램 라이브러리를 제공하지만 커널을 처리하지는 않습니다. 즉 추상화 수준이 다르죠. 시스템 수준 이벤트의 경우 libstdc++는 먼저 커널과 통신하기 전에 glibc와 상호 작용을 합니다. 아무튼 glibc와 비교할 때 libstdc++는 좀 더 상위 레벨이 라이브러리죠.\n 언리얼 프로젝트와 third-party libraries 통합 이슈 언리얼에서 쓰는 것은 libc++입니다. 라이선스 문제 때문에 libc++를 쓰는 것으로 압니다. 안드로이드 역시 libc++만 지원할 예정이죠.\n리눅스는 libstdc++이 기본입니다. libstdc++과 libc++ 이 둘은 Application Binary Interfaces가 호환되지 않습니다. 그 결과 서로 간의 컴파일된 바이너리가 상호 통신이 불가능하죠.\n이것이 언리얼 프로젝트에 서드파티 라이브러리 플러그인들을 통합할 때 문제가 되는 이유입니다.\n 대처 방법 third-party libraries를 libc++로 컴파일해야 합니다.(가급적 엔진에 번들된 버전으로) 차후에 이것에 도움이 되는 괜찮은 Open Source 프로젝트를 소개해 드릴까 합니다.\n 😊\n"
+},
+{
+	"uri": "https://thesorauniverse.com/tags/flow-%EC%83%81%ED%83%9C/",
+	"title": "flow 상태",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://thesorauniverse.com/tags/%EA%B0%9C%EB%B0%9C%EB%A7%88%EC%9D%B8%EB%93%9C/",
+	"title": "개발마인드",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://thesorauniverse.com/categories/%EA%B0%9C%EB%B0%9C%EB%A7%88%EC%9D%B8%EB%93%9C/",
+	"title": "개발마인드",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://thesorauniverse.com/tags/%EB%AA%B0%EC%9E%85/",
+	"title": "몰입",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://thesorauniverse.com/posts/kr/dev-mind/immersion-theory/",
+	"title": "몰입 이론 -칙센트미하이-",
+	"tags": ["개발마인드", "몰입", "flow 상태"],
+	"description": "",
+	"content": "몰입 그래프 (최초 새로운 과제 두둥 등장)\n  불안 : 처음에 할 수 있을까 불안 각성 : 좋은 힌트를 얻거나 깨달음을 얻게 됨 몰입 : 각성 단계에서 얻은 것들로 계속 시도 자신감 : 몰입 단계에서 성과가 나오면 이 단계로 안정 : 잘 진행되는 단계 지루함 : 이제 좀 루즈해짐 무기력 : 재미가 아예 사라짐 걱정 : 슬슬 뭔가 새로운 걱정이 스물스물 올라옴 (다시 새로운 과제가 날라옴) 다시 불안 : 다시 새로운 과제가 오고 불안 단계로    절대적 몰입 상태 절대적 몰입의 상태 (flow 상태) 에 들어가면 다음과 같은 상황이 발생한다고 합니다.\n  과정의 모든 단계에 명확한 목표가 있다. (일상생활에서 생긴일과 대조적으로 플로 상태에서는 확실히 알고 있음) 행동에 대해 즉시 피드백한다. (플로 상태에서는 자신이 어느 정도 잘하고 있는지를 자각하고 있다) 도전과 능력이 균형을 이룬다. (너무 쉬워서 지루하지도, 너무 어려워서 도망치고 싶지 않고 절묘한 균형) 행위와 의식이 융합한다. (완전히 집중모드다) 집중을 흐트러뜨리는 일은 의식에서 배제한다. (몰입해서 일상생활의 사소한 일이나 고민이 의식에서 배제되어 있음) 실패를 두려워하지 않는다. (집중력과 능력이 조화를 이루고 있기 때문에 불안을 느낄 수 없다. 마음속에서 불안이 밀려오면 플로 상태가 캔슬) 자의식이 소멸된다 (자신의 행위에 상당히 몰입해 있기 때문에 다른 사람의 평가에 신경을 쓰거나 걱정하지 않는다, 플로가 끝나면 성장했다는 만족감을 느낌) 시간 감각이 왜곡된다 (몇 시간이 몇 분 처럼 느껴지거나 스포츠 같은 경우 어느 한순간이 길게 느껴진다.) 활동이 자기 목적이 된다. (플로 상태를 즐긴다)    해석  집중력이 높은 사람 : 몰입, 자신감, 안정 단계의 시간 비율이 상대적으로 더 높은 사람 불안, 각성 단계는 업무 파악, 정리, 분석을 잘해서 빠르게 헤쳐 나가는 수 밖에 없다. 뭔가 새로운 것을 할 때 어쩔 수 없이 거쳐야 하는 단계로 자괴감에 빠질 필요가 없다.   😊\n"
+},
+{
+	"uri": "https://thesorauniverse.com/tags/best-practices/",
+	"title": "best-practices",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://thesorauniverse.com/tags/docker/",
+	"title": "Docker",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://thesorauniverse.com/tags/dockerfile/",
+	"title": "Dockerfile",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://thesorauniverse.com/tags/go-module/",
+	"title": "go module",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://thesorauniverse.com/tags/golang/",
+	"title": "Golang",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://thesorauniverse.com/categories/golang/",
+	"title": "Golang",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://thesorauniverse.com/posts/kr/golang/making-golang-docker-img-best-practices/",
+	"title": "경량의 Golang-Docker Image 만들기",
+	"tags": ["한글", "Docker", "Golang", "Dockerfile", "best-practices", "go module"],
+	"description": "",
+	"content": "Ping-Pong Webserver 구현\n Working Directory : go-docker\n사용 웹프레임워크 : gin-gonic\n main.go package main import ( \u0026#34;github.com/gin-gonic/gin\u0026#34; ) func main() { //gin.SetMode(gin.ReleaseMode) 릴리즈 모드 활성화 하고 싶으면 주석 해제 \tr := gin.Default() r.GET(\u0026#34;/ping\u0026#34;, func(c *gin.Context) { c.JSON(200, gin.H{ \u0026#34;message\u0026#34;: \u0026#34;pong\u0026#34;, }) })\tr.Run(\u0026#34;:3000\u0026#34;) // port }  Go module 생성 go mod init go-docker  Dockerfile  Working directory에 Dockerfile 생성\n FROMgolang:alpine AS builderENV GO111MODULE=on \\  CGO_ENABLED=0 \\  GOOS=linux \\  GOARCH=amd64 WORKDIR/buildCOPY go.mod go.sum main.go ./RUN go mod downloadRUN go build -o main .WORKDIR/distRUN cp /build/main .FROMscratchCOPY --from=builder /dist/main .ENTRYPOINT [\u0026#34;/main\u0026#34;] 이미지 빌드 및 실행 docker build . -t go-dock docker run -p 3000:3000 go-dock  테스트 curl http://localhost:3000/ping  Reference Using Go Module\ndocker.com/blog\n 😊\n"
+},
+{
+	"uri": "https://thesorauniverse.com/tags/%ED%95%9C%EA%B8%80/",
+	"title": "한글",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://thesorauniverse.com/about/",
+	"title": "Abouts",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://thesorauniverse.com/about/thesora/",
+	"title": "Thesora",
+	"tags": [],
+	"description": "",
+	"content": "반갑습니다.\n게임 서버 개발자 더소라입니다.\n게임을 포함한 여러 대중문화를 사랑합니다.\n개발과 관련된 글을 올립니다.\n개인소설도 올릴 예정입니다.\n"
+},
+{
+	"uri": "https://thesorauniverse.com/tags/blog/",
+	"title": "blog",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://thesorauniverse.com/tags/github/",
+	"title": "GitHub",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://thesorauniverse.com/categories/hugo/",
+	"title": "Hugo",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://thesorauniverse.com/tags/hugo/",
+	"title": "hugo",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://thesorauniverse.com/posts/kr/hugo/making-blog-with-hugo/",
+	"title": "Hugo로 github에 블로그 만들기",
+	"tags": ["한글", "hugo", "휴고", "GitHub", "blog"],
+	"description": "",
+	"content": "윈도우즈 기준, Choco를 통한 설치를 추천\nChoco 설치\n Hugo 설치 이하의 커맨드들은 PowerShell에서 진행합니다.\nchoco install hugo -confirm\r Git Repository 2개 생성   \u0026lt;username\u0026gt;.github.io-project\n\u0026lt;proj_repo\u0026gt; contents(md, image, css등)\n  \u0026lt;username\u0026gt;.github.io\n\u0026lt;deploy_repo\u0026gt; 실제 웹서비스를 위해 렌더링 된 site\n   \u0026lt;username\u0026gt;이 thesora라면 git 주소는 https://github.com/thesorauni/thesorauni.github.io-project (주소에 \u0026lt;username\u0026gt;이 2번 들어 있음에 유의)`\n  Hugo site 생성 # C:\\Users\\username\\Hugo\\Sites를 Working Dictory로 사용 cd $env:USERPROFILE md Hugo\\Sites ; cd Hugo\\Sites hugo new site \u0026lt;deploy_repo\u0026gt; # ex : hugo new site thesora.github.io  \u0026lt;proj_repo\u0026gt;에 Hugo contents 및 themes 가져오기 cd $env:USERPROFILE # \u0026lt;proj_repo\u0026gt; clone git clone http://github.com/\u0026lt;username\u0026gt;.\u0026lt;proj_repo\u0026gt; # 방금 Hugo를 통해 만들 Site안의 내용물들 \u0026lt;proj_repo\u0026gt; 안으로 복사 Copy Hugo\\Sites\\\u0026lt;deploy_repo\u0026gt;\\* \u0026lt;proj_repo\u0026gt; # clone 한 곳에서 작업 cd \u0026lt;proj_repo\u0026gt; # themes 받기, 여기서는 ananke 테마 사용 git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke # theme 설정 echo \u0026#39;theme = \u0026#34;ananke\u0026#34;\u0026#39; \u0026gt;\u0026gt; config.toml # blog post 하나 작성 hugo new posts/my-first-post.md  Github에 호스팅 해보기 # 서버 띄워 보기 hugo server -D -t ananke # http://localhost:1313/ 잘 되면 Ctrl+C로 Server 중지 후에 # 아래의 submodule 추가를 위해 public 폴더 정리 rd Public -Recurse # \u0026lt;deploy_repo\u0026gt;를 \u0026lt;proj_repo\u0026gt;안에 submodule 추가하여 관리하는 것을 추천 git submodule add -b master https://github.com/\u0026lt;username\u0026gt;/\u0026lt;username\u0026gt;.github.io.git public ################################################### # config.toml baseURL을 \u0026lt;username\u0026gt;.github.io로 변경 ################################################### # 빌드를 위해 다시 \u0026lt;proj_repo\u0026gt;로 cd .. # 빌드 hugo -t ananke # \u0026lt;deploy_repo\u0026gt; 변경 사항 업데이트 cd public git add . git commit -m \u0026#34;first\u0026#34; git push origin master # 마지막으로 \u0026lt;proj_repo\u0026gt;의 변경 사항도 업데이트 cd .. git add . git commit -m \u0026#34;first\u0026#34; git push origin master  Git Pages 설정 https://github.com/\u0026lt;USERNAME\u0026gt;/\u0026lt;USERNAME\u0026gt;.github.io/settings로 이동하여\n[GitHub Pages]에서\n Source를 master로 Select folder를 /(root)로 변경   테스트 웹브라우저상에서 \u0026lt;USERNAME\u0026gt;.github.io로 접속\n Reference Hugo Official\nGithub-Pages Official Guide\n 😊\n"
+},
+{
+	"uri": "https://thesorauniverse.com/tags/%ED%9C%B4%EA%B3%A0/",
+	"title": "휴고",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://thesorauniverse.com/tags/choco/",
+	"title": "choco",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://thesorauniverse.com/tags/choco-command/",
+	"title": "choco command",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://thesorauniverse.com/posts/kr/choco/should-use-choco/",
+	"title": "Choco 사용하기(Windows Package Manager)",
+	"tags": ["windows", "choco", "choco command"],
+	"description": "",
+	"content": "choco 설치 # PowerShell 관리자 권한에서 진행 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(\u0026#39;https://chocolatey.org/install.ps1\u0026#39;))  choco 명령어들 # 지정한 패키지의 존재유무, 버전, Approved 날짜 확인 choco search vscode # -e : 정확히 패키지명이 일치하는것만 검색 # -detail : Package parameters등 추가 정보 얻기 choco search vscode -exact --detail # 패키지 설치 choco install vscode # 설치 중 script 실행 여부 물어보는 것 yes 처리 choco install vscode --confirm # 패키지 업그레이드 choco upgrade vscode # 패키지 삭제 choco uninstall vscode  Reference Chocolatey Official\n 😊\n"
+},
+{
+	"uri": "https://thesorauniverse.com/tags/windows/",
+	"title": "windows",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]

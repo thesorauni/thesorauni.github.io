@@ -6,10 +6,19 @@
     <description>Recent content on TheSora</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Sep 2020 23:30:49 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 08 Sep 2020 10:40:21 +0900</lastBuildDate>
     
 	<atom:link href="https://thesorauniverse.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>리눅스의 C&#43;&#43; standard library 정리 그리고 Unreal project와의 이슈</title>
+      <link>https://thesorauniverse.com/posts/kr/history/linux-cpp-standard-library/</link>
+      <pubDate>Tue, 08 Sep 2020 10:40:21 +0900</pubDate>
+      
+      <guid>https://thesorauniverse.com/posts/kr/history/linux-cpp-standard-library/</guid>
+      <description>개요  C++ standard library 구현체에 관한 내용 관련해서 Unreal project와 third-party libraries 통합 이슈   간단 C Standard Library 정리 최초의 libc, 이것이 원래의 고대 표준 라이브러리 구현체입니다.</description>
+    </item>
     
     <item>
       <title>몰입 이론 -칙센트미하이-</title>

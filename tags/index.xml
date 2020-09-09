@@ -6,10 +6,73 @@
     <description>Recent content in Tags on TheSora</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Sep 2020 17:22:00 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 08 Sep 2020 10:40:21 +0900</lastBuildDate>
     
 	<atom:link href="https://thesorauniverse.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>history</title>
+      <link>https://thesorauniverse.com/tags/history/</link>
+      <pubDate>Tue, 08 Sep 2020 10:40:21 +0900</pubDate>
+      
+      <guid>https://thesorauniverse.com/tags/history/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://thesorauniverse.com/tags/linux/</link>
+      <pubDate>Tue, 08 Sep 2020 10:40:21 +0900</pubDate>
+      
+      <guid>https://thesorauniverse.com/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>standard libs</title>
+      <link>https://thesorauniverse.com/tags/standard-libs/</link>
+      <pubDate>Tue, 08 Sep 2020 10:40:21 +0900</pubDate>
+      
+      <guid>https://thesorauniverse.com/tags/standard-libs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>unreal</title>
+      <link>https://thesorauniverse.com/tags/unreal/</link>
+      <pubDate>Tue, 08 Sep 2020 10:40:21 +0900</pubDate>
+      
+      <guid>https://thesorauniverse.com/tags/unreal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>flow 상태</title>
+      <link>https://thesorauniverse.com/tags/flow-%EC%83%81%ED%83%9C/</link>
+      <pubDate>Mon, 07 Sep 2020 23:30:49 +0900</pubDate>
+      
+      <guid>https://thesorauniverse.com/tags/flow-%EC%83%81%ED%83%9C/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>개발마인드</title>
+      <link>https://thesorauniverse.com/tags/%EA%B0%9C%EB%B0%9C%EB%A7%88%EC%9D%B8%EB%93%9C/</link>
+      <pubDate>Mon, 07 Sep 2020 23:30:49 +0900</pubDate>
+      
+      <guid>https://thesorauniverse.com/tags/%EA%B0%9C%EB%B0%9C%EB%A7%88%EC%9D%B8%EB%93%9C/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>몰입</title>
+      <link>https://thesorauniverse.com/tags/%EB%AA%B0%EC%9E%85/</link>
+      <pubDate>Mon, 07 Sep 2020 23:30:49 +0900</pubDate>
+      
+      <guid>https://thesorauniverse.com/tags/%EB%AA%B0%EC%9E%85/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>best-practices</title>
@@ -98,6 +161,33 @@
       <pubDate>Sat, 05 Sep 2020 22:22:00 +0900</pubDate>
       
       <guid>https://thesorauniverse.com/tags/%ED%9C%B4%EA%B3%A0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>choco</title>
+      <link>https://thesorauniverse.com/tags/choco/</link>
+      <pubDate>Fri, 04 Sep 2020 22:54:49 +0900</pubDate>
+      
+      <guid>https://thesorauniverse.com/tags/choco/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>choco command</title>
+      <link>https://thesorauniverse.com/tags/choco-command/</link>
+      <pubDate>Fri, 04 Sep 2020 22:54:49 +0900</pubDate>
+      
+      <guid>https://thesorauniverse.com/tags/choco-command/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>windows</title>
+      <link>https://thesorauniverse.com/tags/windows/</link>
+      <pubDate>Fri, 04 Sep 2020 22:54:49 +0900</pubDate>
+      
+      <guid>https://thesorauniverse.com/tags/windows/</guid>
       <description></description>
     </item>
     

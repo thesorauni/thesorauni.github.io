@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>windows on TheSora</title>
+    <link>https://thesorauniverse.com/tags/windows/</link>
+    <description>Recent content in windows on TheSora</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 04 Sep 2020 22:54:49 +0900</lastBuildDate>
+    
+	<atom:link href="https://thesorauniverse.com/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Choco 사용하기(Windows Package Manager)</title>
+      <link>https://thesorauniverse.com/posts/kr/choco/should-use-choco/</link>
+      <pubDate>Fri, 04 Sep 2020 22:54:49 +0900</pubDate>
+      
+      <guid>https://thesorauniverse.com/posts/kr/choco/should-use-choco/</guid>
+      <description>choco 설치 # PowerShell 관리자 권한에서 진행 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.</description>
+    </item>
+    
+  </channel>
+</rss>
